@@ -1,0 +1,103 @@
+
+
+.contact_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+}
+
+.contact_logo {
+    margin: 1rem;
+}
+.contact_card {
+    width: 90vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 1px solid rgb(185, 185, 185) ;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+.izr_kontakt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.izr_logo {
+    width: 200px;
+}
+
+.contact_card p {
+    padding: 1rem;
+}
+
+.contact_card .last_p {
+    border-bottom: none;
+}
+
+
+.heading {
+    border-bottom: 1px solid rgb(185, 185, 185) ;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    margin-top: 0;
+}
+
+.chevron {
+    transition: all 0.3s ease;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    
+}
+
+
+
+.collapsible_content {
+    margin: 0.5rem;
+    border: 1px solid rgb(185, 185, 185) ;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+    transition: all .3s ease;
+}
+
+.collapsed .collapsible_content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+
+
+.expanded .collapsible_content {
+    max-height: 50vh;
+    opacity: 1;
+
+}    
+
+.expanded .heading .chevron {
+    transform: rotate(180deg);
+    
+}
+
+
+
+.infos {
+    width: 100%;
+}
+
+h4 {
+    margin-left: 1rem;
+}
+.email {
+    font-style: italic;
+}

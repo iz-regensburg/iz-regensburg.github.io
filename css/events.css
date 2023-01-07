@@ -1,0 +1,87 @@
+.events_body {
+    height: 100vh;
+    background: none;
+}
+
+.events_sec {
+    padding-top: 100px;
+}
+.events_nav {
+    background-image: url(/svg_files/background2.svg);
+    background-size: 200px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+
+.event_heading {
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+.event{
+    padding-top: 100px;
+}
+
+.event_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.event_content {
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius:20px ;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+    transition: all 1s ease;
+}
+
+.event_collapsed .event_content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+.event_expanded .event_content {
+    max-height: 300vh;
+    opacity: 1;
+    margin: 1rem;
+}
+
+.arrows {
+    height: 70px;
+    width: 70px;
+    margin: 1rem;
+    background-image: url(/svg_files/SVG/double_arrow_down_black.svg);
+    background-repeat: no-repeat;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.arrows:hover {
+    height: 80px;
+    width: 80px;
+    background-image: url(/svg_files/SVG/double_arrow_down_green.svg);
+    background-repeat: no-repeat;
+}
+
+.event_expanded .arrows {
+    transform: rotate(180deg);
+}
+.line {
+    height: 2px;
+    background-color: black;
+    width: 50%;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.event_expanded .line {
+    width: 80%;
+}
