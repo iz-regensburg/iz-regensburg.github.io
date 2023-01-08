@@ -16,16 +16,19 @@ function myfunc(){
 
 }
 
-
-card[0].addEventListener("click", function(){window.open("/infos.html","_self");});
-card[1].addEventListener("click", function(){window.open("/donate.html","_self");});
-card[2].addEventListener("click", function(){window.open("/events.html","_self");});
-card[0].addEventListener("mouseover", function(){time.classList.toggle("time_w");});
-card[0].addEventListener("mouseout", function(){time.classList.remove("time_w");});
-card[1].addEventListener("mouseover", function(){donate.classList.toggle("donate_w");});
-card[1].addEventListener("mouseout", function(){donate.classList.remove("donate_w");});
-card[2].addEventListener("mouseover", function(){events.classList.toggle("events_w");});
-card[2].addEventListener("mouseout", function(){events.classList.remove("events_w");});
+//f(window.outerWidth > 1000) {
+    
+    card[0].addEventListener("click", function(){window.open("/infos.html","_self");});
+    card[1].addEventListener("click", function(){window.open("/donate.html","_self");});
+    card[2].addEventListener("click", function(){window.open("/events.html","_self");});
+    card[0].addEventListener("mouseover", function(){time.classList.toggle("time_w");});
+    card[0].addEventListener("mouseout", function(){time.classList.remove("time_w");});
+    card[1].addEventListener("mouseover", function(){donate.classList.toggle("donate_w");});
+    card[1].addEventListener("mouseout", function(){donate.classList.remove("donate_w");});
+    card[2].addEventListener("mouseover", function(){events.classList.toggle("events_w");});
+    card[2].addEventListener("mouseout", function(){events.classList.remove("events_w");});
+    
+//}
 
 
 menu_button.addEventListener("click",myfunc);

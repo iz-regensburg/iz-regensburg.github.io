@@ -308,11 +308,6 @@
     box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.1);
 }
 
-.card:hover {
-    transform: scale(105%);
-    background-color:#004225;
-    color: white;
-}
 
 .card_logo {
     margin: 2rem;
@@ -331,26 +326,39 @@
 .time {
     background-image: url(/svg_files/infos_b.svg);
 }
-.time_w {
-    background-image: url(/svg_files/infos_w.svg);
-}
+
 .events {
     background-image: url(/svg_files/event_b.svg);
 }
 
-.events_w {
-    background-image: url(/svg_files/event_w.svg);
-}
 
 .donate {
     background-image: url(/svg_files/donate_b.svg);
 }
-.donate_w {
-    background-image: url(/svg_files/donate_w.svg);
-}
+
 
 
 @media screen and (min-width:850px) {
+
+    .card:hover {
+        transform: scale(105%);
+        background-color:#004225;
+        color: white;
+    }
+    
+    .time_w {
+        background-image: url(/svg_files/infos_w.svg);
+    }
+
+    .events_w {
+        background-image: url(/svg_files/event_w.svg);
+    }
+    
+    .donate_w {
+        background-image: url(/svg_files/donate_w.svg);
+    }
+
+
     .services {
         flex-direction: row;
     }
